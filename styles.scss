@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+$mainFont: "Montserrat", sans-serif;
+$gradientColor1: #25cfc1;
+$gradientColor2: #3ba7ff;
+
+body {
+    font-family: $mainFont;
+    background: url(./bggg.jpg);
+    background-size: cover;  /* Фон покриває весь екран */
+    background-position: center;  /* Центрує фон */
+    background-repeat: no-repeat;  /* Зупиняє повторення фону */
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration-form {
+    background: #3370ad91;
+    padding: 30px; 
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
+    max-width: 500px;
+    width: 100%;
+    min-height: 450px; 
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: px;  
+    color: #a52222;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;  
+    padding: 0;
+
+    label {
+        display: block;
+        margin-bottom: -10px;
+    }
+
+    input,
+    select {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 20px;  
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+
+    .half-width {
+        flex: 1;
+    }
+}
+
+
+
+input[type="submit"] {
+    width: 50%;
+    background: $gradientColor1;
+    color: #000000;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+
+    &:hover {
+        background: darken($gradientColor1, 10%);
+    }
+}
+
+
+/* мобільні пристрої */
+@media (max-width: 768px) {
+    .registration-form {
+        padding: 20px; 
+        min-height: 400px;  
+    }
+
+    input[type="submit"] {
+        width: 70%;  
+    }
+
+    h1 {
+        margin-bottom: -5px; 
+    }
+
+    fieldset {
+        margin-bottom: 15px;  
+    }
+}
+
+@media (max-width: 480px) {
+    .registration-form {
+        padding: 15px;  
+        min-height: 350px; 
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    input[type="submit"] {
+        width: 80%;  
+    }
+
+    h1 {
+        margin-bottom: 0; 
+    }
+
+    fieldset {
+        margin-bottom: 20px;  
+    }
+}

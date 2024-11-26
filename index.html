@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form class="registration-form">
+        <h1><img src="/registration.png" alt="" width="300" height="130"></h1>
+        <fieldset>
+            <label for="nickname"><img src="/Nickname-20-11-2024-removebg-preview.png" alt="" width="160" height="55"></label>
+            <input type="text" id="nickname" name="nickname" placeholder="Enter your nickname" required>
+
+            <div class="row">
+                <div class="half-width">
+                    <label for="email"><img src="/Email-20-11-2024-removebg-preview.png" alt="" width="120" height="55"></label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                </div>
+                <div class="half-width">
+                    <label for="dob"><img src="/Date-of-birth-20-11-2024__1_-removebg-preview.png" alt="" width="200" height="55"></label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            
+            <label for="gender"><img src="/Gender-20-11-2024-removebg-preview.png" alt="" width="130" height="55"></label>
+            <select id="gender" name="gender" required>
+                <option value="">choose gender</option>
+                <option value="male">women</option>
+                <option value="female">man</option>
+                <option value="other">other</option>
+            </select>
+
+            <label for="country"><img src="/Country-20-11-2024-removebg-preview.png" alt="" width="140" height="55"></label>
+            <input type="text" id="country" name="country" list="countries" placeholder="choose a country" required>
+
+            <datalist id="countries">
+                <option value="Україна">
+                <option value="Польща">
+                <option value="США">
+                <option value="Німеччина">
+                <option value="Франція">
+                <option value="Італія">
+                <option value="Іспанія">
+                <option value="Великобританія">
+                <option value="Канада">
+                <option value="Австралія">
+                <option value="Інша">
+            </datalist>
+
+
+            <div class="row">
+                <div class="half-width">
+                    <label for="heroType"><img src="/hero type.png" alt="" width="140" height="55"></label>
+                    <input type="text" id="heroType" name="heroType" placeholder="counter terrorist..." required>
+                </div>
+                <div class="half-width">
+                    <label for="experience"><img src="/gaming expirience.png" alt="" width="250" height="55"></label>
+                    <input type="number" id="experience" name="experience" min="0" max="60" placeholder="0-60" required>
+                </div>
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Зареєструватися">
+    </form>
+</body>
+
+</html>
